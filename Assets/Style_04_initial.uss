@@ -1,0 +1,12 @@
+.panel {
+    background-color: rgba(79, 79, 79, 0.41);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.panel_badges {
+    background-color: rgba(103, 103, 103, 0.5);
+    margin-bottom: 5px;
+}
