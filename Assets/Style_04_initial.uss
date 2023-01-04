@@ -10,3 +10,68 @@
     background-color: rgba(103, 103, 103, 0.5);
     margin-bottom: 5px;
 }
+
+.panel_info {
+    flex-grow: 1;
+    flex-basis: 100%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.rts_buttons {
+    border-left-color: rgb(204, 167, 107);
+    border-right-color: rgb(204, 167, 107);
+    border-top-color: rgb(204, 167, 107);
+    border-bottom-color: rgb(204, 167, 107);
+    background-color: rgb(49, 56, 84);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    flex-grow: 0;
+    flex-direction: column;
+    flex-shrink: 1;
+    flex-basis: auto;
+    width: auto;
+    -unity-font-definition: url('project://database/Assets/Fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&guid=4341e65790bf23848ba7ae93f3d8aa3d&type=2#Cinzel-VariableFont_wght SDF');
+}
+
+.text_classic {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    white-space: normal;
+    -unity-text-align: upper-center;
+    flex-shrink: 1;
+    -unity-font-definition: url('project://database/Assets/Fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&guid=4341e65790bf23848ba7ae93f3d8aa3d&type=2#Cinzel-VariableFont_wght SDF');
+    color: rgb(255, 255, 255);
+    -unity-font-style: bold;
+    font-size: 14px;
+}
+
+.label {
+    -unity-font-style: normal;
+    -unity-font-definition: url('project://database/Assets/Fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&guid=4341e65790bf23848ba7ae93f3d8aa3d&type=2#Cinzel-VariableFont_wght SDF');
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-left: 10px;
+    margin-right: 2px;
+    margin-top: 2px;
+    margin-bottom: 0;
+}
