@@ -5,20 +5,24 @@ using UnityEngine.UIElements;
 
 public class BadgeScript : MonoBehaviour
 {
-    List<Label> labels = new List<Label>();
-
     VisualElement root;
 
+    [SerializeField] List<Fraction> fractions;
+       
     private void OnEnable()
     {
+        Application.targetFrameRate = 60;
+
         root = GetComponent<UIDocument>().rootVisualElement;
+
+        DropdownController controller = new DropdownController(root, fractions);
 
         InitializeBadges();
     }
 
     void InitializeBadges()
     {
-
+        List<Label> labels = new List<Label>();
         string[] romanNum = { "I", "II", "III", "IV", "V", "VI"};
 
         int index = 0;

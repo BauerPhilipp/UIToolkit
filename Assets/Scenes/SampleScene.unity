@@ -481,3 +481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c19fbaef3d064b46bc5b90cacc86001, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fractions:
+  - {fileID: 11400000, guid: 91747de8ad6b0154aa47806594ac1423, type: 2}
+  - {fileID: 11400000, guid: 13a0977788288514d8229095fb0a15e3, type: 2}
+  - {fileID: 11400000, guid: bf9750d69b8283b4e946f6fb06ea2381, type: 2}

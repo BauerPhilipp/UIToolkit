@@ -13,10 +13,14 @@
                         <ui:Label tabindex="-1" text="12000 BCE" display-tooltip-when-elided="true" class="label" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=4341e65790bf23848ba7ae93f3d8aa3d&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-grow: 1; flex-basis: 80%;" />
+                <ui:VisualElement name="PanelCharacter" class="panel" style="flex-grow: 1; flex-basis: 80%; align-items: center; justify-content: center; padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+                    <ui:VisualElement name="Character" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 100%; height: 100%;" />
+                </ui:VisualElement>
             </ui:VisualElement>
             <ui:VisualElement name="TopMiddle" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-basis: 60%; flex-direction: row; align-items: flex-end;">
-                <ui:VisualElement name="PanelFraction" class="panel" style="flex-grow: 1; width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                <ui:VisualElement name="PanelFraction" class="panel" style="flex-grow: 1; width: 35%; height: 80%; border-top-right-radius: 0; border-bottom-right-radius: 0; justify-content: flex-end; align-items: center;">
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="LabelMotto" style="margin-bottom: 50px; font-size: 32px; -unity-text-align: upper-center; -unity-font-definition: url(&apos;project://database/Assets/Fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=4341e65790bf23848ba7ae93f3d8aa3d&amp;type=2#Cinzel-VariableFont_wght SDF&apos;); -unity-font-style: italic; background-color: rgb(178, 90, 90); border-left-width: 5px; border-right-width: 5px; border-top-width: 5px; border-bottom-width: 5px; border-top-left-radius: 42px; border-bottom-left-radius: 42px; border-top-right-radius: 42px; border-bottom-right-radius: 42px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); white-space: normal; width: 80%;" />
+                </ui:VisualElement>
                 <ui:VisualElement name="PanelBadges" style="flex-grow: 1; width: 10%; height: 80%; border-top-left-radius: 20px; border-bottom-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; margin-right: 5px;">
                     <ui:VisualElement class="panel_badges" style="flex-basis: 100%; border-top-right-radius: 20px; border-bottom-right-radius: 0;">
                         <ui:Instance template="Template_Middle_Badge" name="Template_Middle_Badge" style="flex-grow: 1;" />
@@ -53,6 +57,8 @@
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 20%;" />
+        <ui:VisualElement name="BottomContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 20%;">
+            <ui:VisualElement name="DropdownContainer" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 379px;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
