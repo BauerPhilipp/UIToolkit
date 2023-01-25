@@ -16,3 +16,6 @@ MonoBehaviour:
   fractionMotto: Likes Bananas
   fractionImgPath: boat
   characterImgPath: Minions
+  reward: 200
+  score: 75/200
+  oddImage: {fileID: 21300000, guid: 2866a9e82e9d5f14dae2e4314757fd53, type: 3}

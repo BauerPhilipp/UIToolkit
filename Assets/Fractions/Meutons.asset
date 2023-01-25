@@ -16,3 +16,6 @@ MonoBehaviour:
   fractionMotto: Axe
   fractionImgPath: sailing
   characterImgPath: Meutons
+  reward: 100
+  score: 100/200
+  oddImage: {fileID: 21300000, guid: 07247f942aa1ac045bc483c9f7a8a9a0, type: 3}

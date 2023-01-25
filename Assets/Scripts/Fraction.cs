@@ -9,4 +9,8 @@ public class Fraction : ScriptableObject
     public string fractionMotto;
     public string fractionImgPath;
     public string characterImgPath;
+    public string reward;
+    public string score;
+    public Sprite oddImage;
+
 }

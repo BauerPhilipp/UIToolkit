@@ -16,3 +16,6 @@ MonoBehaviour:
   fractionMotto: NoMotto
   fractionImgPath: ship-2094307_1280
   characterImgPath: Soths
+  reward: 300
+  score: 125/200
+  oddImage: {fileID: 21300000, guid: bd91805cbd7671246a4b9265f64fcf8b, type: 3}

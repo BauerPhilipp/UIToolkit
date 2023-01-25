@@ -16,6 +16,7 @@ public class BadgeScript : MonoBehaviour
         root = GetComponent<UIDocument>().rootVisualElement;
 
         DropdownController controller = new DropdownController(root, fractions);
+        ListManager listManager = new ListManager(root, fractions);
 
         InitializeBadges();
     }

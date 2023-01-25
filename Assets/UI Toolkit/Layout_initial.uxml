@@ -2,6 +2,7 @@
     <ui:Template name="Template_Middle_Badge" src="project://database/Assets/UI/Templates/Template_Middle_Badge.uxml?fileID=9197481963319205126&amp;guid=905251bedfd648a4a9aac82942f44151&amp;type=3#Template_Middle_Badge" />
     <ui:Template name="Template_Middle_Badge-Key" src="project://database/Assets/UI/Templates/Template_Middle_Badge-Key.uxml?fileID=9197481963319205126&amp;guid=54674a4c7c5244a459cfb78b80f011d4&amp;type=3#Template_Middle_Badge-Key" />
     <Style src="project://database/Assets/Style_04_initial.uss?fileID=7433441132597879392&amp;guid=2fcff8ac99dfdc54eb7b753e2e0fece8&amp;type=3#Style_04_initial" />
+    <Style src="project://database/Assets/UI%20Toolkit/Resources/Stylesheet_Stars.uss?fileID=7433441132597879392&amp;guid=0d7334f14937d2945ac658e65f243e31&amp;type=3#Stylesheet_Stars" />
     <ui:VisualElement name="MainContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Textures/background_blur.jpg?fileID=2800000&amp;guid=b719f820b9588994f900f304ac991fe1&amp;type=3#background_blur&apos;);">
         <ui:VisualElement name="TopContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-basis: 80%;">
             <ui:VisualElement name="TopLeft" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); flex-basis: 20%; justify-content: flex-end; margin-right: 10%;">
@@ -9,6 +10,7 @@
                     <ui:VisualElement style="flex-grow: 0; background-image: url(&apos;project://database/Assets/Textures/blue_jay_bird_nature.png?fileID=2800000&amp;guid=81636ea4eaf705941b3b02aa96f102c2&amp;type=3#blue_jay_bird_nature&apos;); width: 120px; height: 120px;" />
                     <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
                         <ui:Label tabindex="-1" text="Meutons" display-tooltip-when-elided="true" class="text_classic" style="font-size: 22px; color: rgb(255, 178, 0); -unity-text-outline-width: 1px; -unity-text-outline-color: rgba(0, 0, 0, 0.4);" />
+                        <StarController Stars="5" />
                         <ui:Label tabindex="-1" text="Medieval Era" display-tooltip-when-elided="true" class="label" />
                         <ui:Label tabindex="-1" text="12000 BCE" display-tooltip-when-elided="true" class="label" style="-unity-font-definition: url(&apos;project://database/Assets/Fonts/Cinzel-VariableFont_wght%20SDF.asset?fileID=11400000&amp;guid=4341e65790bf23848ba7ae93f3d8aa3d&amp;type=2#Cinzel-VariableFont_wght SDF&apos;);" />
                     </ui:VisualElement>
@@ -41,12 +43,19 @@
                         <ui:Instance template="Template_Middle_Badge-Key" name="Template_Middle_Badge-Key" style="flex-grow: 1;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
-                <ui:VisualElement name="PanelList" class="panel" style="flex-grow: 1; width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                <ui:VisualElement name="PanelList" class="panel" style="flex-grow: 1; width: 35%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); height: 20%;" />
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: center; justify-content: center; margin-left: 5px; margin-right: 5px; margin-top: 5px; margin-bottom: 5px; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                        <ui:ListView focusable="true" name="MyListView" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="VisualElement" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); height: 30%;" />
+                </ui:VisualElement>
                 <ui:VisualElement name="PanelInfo" style="flex-grow: 1; width: 20%; height: 80%; border-top-left-radius: 0; border-bottom-left-radius: 0;">
                     <ui:VisualElement class="panel panel_info" style="margin-bottom: 5px;">
                         <ui:Label tabindex="-1" text="Era Goal" display-tooltip-when-elided="true" class="text_classic" />
+                        <StarController Stars="2" />
                         <ui:Label tabindex="-1" text="Collect 7 stars by fullfilling goals related to the era stars" display-tooltip-when-elided="true" class="text_classic" />
-                        <ui:Button text="Show Curltures" display-tooltip-when-elided="true" class="rts_buttons" />
+                        <ui:Button text="Show Curltures" display-tooltip-when-elided="true" class="rts_buttons" style="white-space: nowrap;" />
                     </ui:VisualElement>
                     <ui:VisualElement class="panel panel_info" style="flex-grow: 1; flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;">
                         <ui:Label tabindex="-1" text="Competitive Deeds" display-tooltip-when-elided="true" class="text_classic" />
@@ -56,6 +65,7 @@
                     <ui:VisualElement class="panel" style="flex-grow: 1; flex-basis: 100%; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 20px;" />
                 </ui:VisualElement>
             </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
         </ui:VisualElement>
         <ui:VisualElement name="BottomContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-basis: 20%;">
             <ui:VisualElement name="DropdownContainer" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); width: 379px;" />
